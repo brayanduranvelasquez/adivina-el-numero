@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Brayan DVelásquez">
+    <meta name="revised" content="22/04/2020">
+    <meta name="description" content="Adivina el numero entre el 1 al 50">
+    <meta name="og:title" content="¡Adivina el numero!">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Adivina el Numero</title>
+</head>
+<body>
+
+    <div class="contenedor">
+        <div class="animacion_aparecer" id="principal">
+            <h2>¡Adivina el número!</h2>
+            <p>Un número entre el 1 al 50.</p>
+
+            <button class="btn_comenzar" id="btn_comenzar">Comenzar</button>
+
+            <br><br><small>@BrayanDVelásquez - 2020</small>
+        </div>
+
+        <!-- Para el proceso de adivinar el numero -->
+
+        <div class="animacion_aparecer" id="adivina">
+                <h2>Introduzca un número</h2>
+                <p>Entre el 1 al 50</p>
+
+                <input type="text" id="input">
+                <button class="btn_comenzar" id="btn_procesar">Procesar</button><br>
+
+                <div class="animacion" id="mostrar_intentos">¡Vamos! <br> Tienes 5 intentos</div>
+        </div>
+
+        <!-- Para cuando se hayan acabado los intentos o ganado -->
+
+        <div class="animacion_aparecer" id="fin">
+            <h2 id="resultado"></h2>
+            <h3 id="mostrar_numero"></h3><br>
+
+            <button id="btn_reintentar">Volver a intentar</button>
+        </div>
+
+        <!-- Este boton tiene la propiedad -> display: fixed -->
+        <button class="none animacion_aparecer" id="btn_inicio">Volver al inicio</button>
+    </div>
+    
+    <script src="js/javascript.js"></script>
+</body>
+</html>
